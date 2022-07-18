@@ -39,7 +39,6 @@ btnEnable = () => {
 
 // console.log(JSON.stringify(localStorage))
 
-
 updateList = () => {
     keys = Object.keys(localStorage)
     for(a of keys){
@@ -65,6 +64,17 @@ fillDefault = () => {
         document.getElementById("balance").innerText = inc - exp
     }
     updateList()
+}
+
+clearStorage = () => {
+    if(confirm("Are you sure you want to clear all transactions?")){
+        localStorage.clear()
+        document.getElementById("list").innerHTML = ""
+        updateList()
+        document.getElementById("money-minus").innerText = "0.00"
+        document.getElementById("money-plus").innerText = "0.00"
+        document.getElementById("balance").innerText = "0.00"
+    }
 }
 
 fillDefault()
