@@ -42,6 +42,7 @@ body {
   margin: 20px auto;
   width: 350px;
   padding: 2%;
+  padding-bottom: 0;
   background: #f5f7f6;
   border-radius: 20px;
   box-shadow: 4px 4px 8px rgb(150, 0, 150), -4px -4px 8px rgb(150, 0, 150);
@@ -73,10 +74,12 @@ h3 {
   margin-left:400px ;
   width: 270px;
 }
+
 #listDiv{
   height: 450px;
   overflow:auto;
 }
+
 h4 {
   margin: 0;
   text-transform: uppercase;
@@ -137,7 +140,7 @@ input[type='number'] {
   border: 0;
   display: block;
   font-size: 16px;
-  margin: 10px 0 30px;
+  margin: 15px 0 30px;
   padding: 10px;
   width: 100%;
 }
@@ -149,6 +152,13 @@ input[type='number'] {
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
+}
+
+#button2{
+  margin: none;
+  background-color: #d40063;
+  position: relative;
+  bottom: 11px;
 }
 
 .list {
